@@ -1,0 +1,15 @@
+<div align="left" class="col-md-4">
+
+    <div ng-hide="$ctrl.templates">No Templates</div>
+    <ul ng-repeat="template in $ctrl.templates">
+        <li><a href="#!/template/{{template.id}}" ng-click="$ctrl.selectTemplate(template)">{{template.title}}</a></li>
+    </ul>
+</div>
+
+<div align="center">
+    <input type="button" class="btn btn-success" value="Start Campaign" ng-click="$ctrl.startCampaign()">
+</div>
+
+<div align="center">
+    <p>{{$ctrl.render.test}}</p>
+</div>

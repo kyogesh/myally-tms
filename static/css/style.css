@@ -1,0 +1,35 @@
+body {
+    background: #39a1e6;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #c1c9c9;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #39a1e6;
+}
+
+a {
+    color: #000000;
+}
+
+strong b {
+    color: #000000;
+}
+
+input {
+    color: #000000;
+}
+
+textarea {
+    color: #000000;
+}
+
+p {
+    color: #000000;
+}
+
+select {
+    color: #000000;
+}

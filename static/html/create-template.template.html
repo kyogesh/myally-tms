@@ -1,0 +1,29 @@
+<div>
+    <div>
+        <label for="title">Title</label>
+        <input type="text" id="title" ng-model="$ctrl.title">
+    </div>
+    <div>
+        <label for="year">Year</label>
+        <select name="{{value}}" id="year" ng-options="key for (key, value) in $ctrl.yearOptions" ng-model="$ctrl.year">
+        </select>
+    </div>
+    <div class="alert custom_alert alert_storyboard" ng-show="$ctrl.errors.description" ><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> {{ $ctrl.errors.description[0] }}</div>
+
+    <div>
+        <label for="department">Department</label>
+        <select name="{{each.code}}" id="department" ng-options="each.name for each in $ctrl.departmentOptions" ng-model="$ctrl.department">
+        </select>
+    </div>
+    <div>
+        <label for="residential_status">Residential Status</label>
+        <input type="text" id="residential_status" ng-model="$ctrl.residential_status">
+    </div>
+    <div>
+        <label for="content">Content</label>
+        <textarea id="content" ng-model="$ctrl.content" cols="30" rows="10"></textarea>
+    </div>
+
+    <input type="button" value="Submit" ng-click="$ctrl.createTemplate()">
+
+</div>
